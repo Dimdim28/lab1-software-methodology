@@ -19,11 +19,9 @@ const getSolve = (a, b, discriminant) => {
   } else return "There are 0 roots";
 };
 
-const quadraticEquationSolver = (a, b, c) => {
+export const quadraticEquationSolver = (a, b, c) => {
   console.log(`Equation is: ${a} x^2 + ${b} x + ${c} = 0`);
   if (!a) return `Error. Expected a valid real number, got ${a} instead`;
   const discriminant = getDiscriminant(a, b, c);
   return getSolve(a, b, discriminant);
 };
-
-console.log(quadraticEquationSolver(2, 1, -3));

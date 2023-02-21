@@ -1,0 +1,21 @@
+{
+  "name": "lab1-software-methodology",
+  "version": "1.0.0",
+  "description": "KPI lab1 for software methodology",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dimdim28/lab1-software-methodology.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dimdim28/lab1-software-methodology/issues"
+  },
+  "homepage": "https://github.com/Dimdim28/lab1-software-methodology#readme"
+}
