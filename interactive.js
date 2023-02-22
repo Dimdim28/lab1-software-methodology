@@ -30,7 +30,7 @@ const startInteractiveMode = () => {
           process.stdout.write(questions[params.length]);
         } else {
           console.log(quadraticEquationSolver(...params));
-          process.exit();
+          process.exit(0);
         }
       }
     }

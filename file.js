@@ -8,12 +8,12 @@ const startFileMode = () => {
   const filePath = process.argv[2];
   if (!existsSync(filePath)) {
     console.log(`Error: file ${filePath} does not exist`);
-    process.exit();
+    process.exit(1);
   }
   const fileData = readFileSync(filePath).toString();
   if (!formatChecker(fileData)) {
     console.log("invalid file format");
-    return;
+    process.exit(1);
   }
   const params = fileData
     .split("\n")[0]
@@ -21,7 +21,7 @@ const startFileMode = () => {
     .map((string) => parseFloat(string));
   if (params[0] === 0) {
     console.log("Error. a cannot be 0");
-    return;
+    process.exit(1);
   }
   console.log(quadraticEquationSolver(...params));
 };
