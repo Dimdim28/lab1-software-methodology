@@ -2,7 +2,7 @@ import { readFileSync, existsSync } from "fs";
 import { quadraticEquationSolver } from "./solver.js";
 
 const formatChecker = (data) =>
-  /^-?\d+(\.\d+)? -?\d+(\.\d+)? -?\d+(\.\d+)?\n$/g.test(data);
+  /^-?\d+(\.\d+)? -?\d+(\.\d+)? -?\d+(\.\d+)?\r?\n$/g.test(data);
 
 const startFileMode = () => {
   const filePath = process.argv[2];
